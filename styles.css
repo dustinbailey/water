@@ -80,10 +80,11 @@ h2 {
     background-color: var(--primary-light);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.1rem;
     transition: background-color 0.2s;
     -webkit-tap-highlight-color: transparent;
 }
@@ -105,20 +106,21 @@ h2 {
 
 input[type="number"] {
     flex: 1;
-    padding: 10px;
+    padding: 12px;
     border: 2px solid #ddd;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 #add-custom {
     background-color: var(--primary);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.1rem;
     transition: background-color 0.2s;
     -webkit-tap-highlight-color: transparent;
 }
@@ -138,10 +140,11 @@ input[type="number"] {
     background-color: #ff4444;
     color: white;
     border: none;
-    padding: 15px;
+    padding: 16px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.1rem;
     transition: background-color 0.2s;
     -webkit-tap-highlight-color: transparent;
 }
@@ -161,10 +164,11 @@ input[type="number"] {
     background-color: #666666;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 14px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.1rem;
     transition: background-color 0.2s;
     margin-top: 1rem;
     -webkit-tap-highlight-color: transparent;
@@ -237,10 +241,10 @@ input[type="number"] {
     background-color: #ff4444;
     color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 8px 16px;
     border-radius: 3px;
     cursor: pointer;
-    font-size: 0.85rem;
+    font-size: 1rem;
     margin-left: 10px;
     transition: background-color 0.2s;
     -webkit-tap-highlight-color: transparent;
