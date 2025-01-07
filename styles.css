@@ -85,9 +85,16 @@ h2 {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.2s;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.preset:hover {
+@media (hover: hover) {
+    .preset:hover {
+        background-color: var(--primary);
+    }
+}
+
+.preset:active {
     background-color: var(--primary);
 }
 
@@ -113,9 +120,16 @@ input[type="number"] {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.2s;
+    -webkit-tap-highlight-color: transparent;
 }
 
-#add-custom:hover {
+@media (hover: hover) {
+    #add-custom:hover {
+        background-color: var(--primary-dark);
+    }
+}
+
+#add-custom:active {
     background-color: var(--primary-dark);
 }
 
@@ -129,9 +143,16 @@ input[type="number"] {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.2s;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.reset-button:hover {
+@media (hover: hover) {
+    .reset-button:hover {
+        background-color: #cc3333;
+    }
+}
+
+.reset-button:active {
     background-color: #cc3333;
 }
 
@@ -146,9 +167,16 @@ input[type="number"] {
     font-weight: bold;
     transition: background-color 0.2s;
     margin-top: 1rem;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.clear-data-button:hover {
+@media (hover: hover) {
+    .clear-data-button:hover {
+        background-color: #444444;
+    }
+}
+
+.clear-data-button:active {
     background-color: #444444;
 }
 
@@ -189,16 +217,20 @@ input[type="number"] {
 
 .entry-details {
     flex: 1;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.entry-timestamp {
+    font-size: 0.9rem;
+    color: #666;
+    min-width: 75px;
 }
 
 .entry-amount {
     font-weight: bold;
     color: var(--primary-dark);
-}
-
-.entry-timestamp {
-    font-size: 0.85rem;
-    color: #666;
 }
 
 .delete-entry {
@@ -211,9 +243,16 @@ input[type="number"] {
     font-size: 0.85rem;
     margin-left: 10px;
     transition: background-color 0.2s;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.delete-entry:hover {
+@media (hover: hover) {
+    .delete-entry:hover {
+        background-color: #cc3333;
+    }
+}
+
+.delete-entry:active {
     background-color: #cc3333;
 }
 

@@ -7,7 +7,6 @@ class WaterTracker {
         this.addEventListeners();
         this.updateDisplay();
         this.updateLogDisplay();
-        this.clearDataButton = document.getElementById('clear-data');
     }
 
     initializeElements() {
@@ -18,6 +17,7 @@ class WaterTracker {
         this.resetButton = document.getElementById('reset');
         this.presetButtons = document.querySelectorAll('.preset');
         this.logEntriesContainer = document.getElementById('log-entries');
+        this.clearDataButton = document.getElementById('clear-data');
     }
 
     addEventListeners() {
@@ -138,8 +138,8 @@ class WaterTracker {
             entryElement.className = 'log-entry';
             entryElement.innerHTML = `
                 <div class="entry-details">
-                    <span class="entry-amount">${entry.amount} oz</span>
                     <span class="entry-timestamp">${this.formatTimestamp(entry.timestamp)}</span>
+                    <span class="entry-amount">${entry.amount} oz</span>
                 </div>
                 <button class="delete-entry" data-id="${entry.id}">Delete</button>
             `;
