@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydration Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dihydrogen Monoxide Intake Tracker 3000</h1>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="progress-text">
+                <span id="current-amount">0</span> / 128 oz
+            </div>
+        </div>
+
+        <div class="quick-add">
+            <h2>Quick Add</h2>
+            <div class="preset-buttons">
+                <button class="preset" data-amount="12">12 oz</button>
+                <button class="preset" data-amount="24">24 oz</button>
+                <button class="preset" data-amount="36">36 oz</button>
+            </div>
+        </div>
+
+        <div class="custom-add">
+            <h2>Custom Amount</h2>
+            <div class="input-group">
+                <input type="number" id="custom-amount" placeholder="Enter ounces">
+                <button id="add-custom">Add</button>
+            </div>
+        </div>
+
+        <div class="log-container">
+            <h2>Today's Entries</h2>
+            <div class="log-entries" id="log-entries">
+                <!-- Entries will be added here dynamically -->
+            </div>
+        </div>
+
+        <button id="reset" class="reset-button">Reset for New Day</button>
+        <button id="clear-data" class="clear-data-button">Clear All Data</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
