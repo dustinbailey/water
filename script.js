@@ -18,6 +18,9 @@ class WaterTracker {
         this.presetButtons = document.querySelectorAll('.preset');
         this.logEntriesContainer = document.getElementById('log-entries');
         this.clearDataButton = document.getElementById('clear-data');
+        this.remainingAmountDisplay = document.getElementById('remaining-amount');
+        this.remainingStatus = document.getElementById('remaining-status');
+        this.goalAchievedMessage = document.getElementById('goal-achieved');
     }
 
     addEventListeners() {
@@ -104,6 +107,18 @@ class WaterTracker {
         const percentage = Math.min((this.currentOunces / this.goalOunces) * 100, 100);
         this.progressBar.style.width = `${percentage}%`;
         this.currentAmountDisplay.textContent = this.currentOunces;
+        
+        const remaining = Math.max(this.goalOunces - this.currentOunces, 0);
+        this.remainingAmountDisplay.textContent = remaining;
+        
+        // Toggle visibility of the appropriate message
+        if (remaining === 0) {
+            this.remainingStatus.style.display = 'none';
+            this.goalAchievedMessage.style.display = 'inline';
+        } else {
+            this.remainingStatus.style.display = 'inline';
+            this.goalAchievedMessage.style.display = 'none';
+        }
     }
 
     clearAllData() {

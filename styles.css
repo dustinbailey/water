@@ -62,6 +62,13 @@ h2 {
     font-weight: bold;
 }
 
+.remaining-text {
+    text-align: center;
+    margin-top: 0.25rem;
+    font-style: italic;
+    color: var(--text);
+}
+
 .quick-add, .custom-add {
     background-color: white;
     padding: 1.5rem;
